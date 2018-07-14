@@ -1,0 +1,490 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	min-width: 750px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("Images/Backgrounds/1.jpg");
+	background-height:100%;
+	background-width:auto;
+	user-select: none;
+	overflow: scroll;
+}
+
+#wrapper {
+	width: 600px;
+  border-radius: 10px;
+  height: 600px;
+	margin: 0 auto; 
+	margin-top: 35px;
+	box-shadow: 0px 0px 20px #888888;
+}	
+
+.clear{
+  clear:both;
+}
+
+#controls {
+	width: 590px;
+	height: 60px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	background-color: #cd6133;
+	color: #FFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+input[type="number"]{
+  width:40px;
+}
+
+input[type=range] {
+	-webkit-appearance:none !important;
+	-moz-appearance:none;
+	margin:5px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 150px;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-track {
+  width: 150px;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance:none !important;
+  border: 1px solid #000000;
+  height: 12px;
+  width: 8px;
+  border-radius: 3px;
+  background: #DBDBDB;
+  cursor: pointer;
+  margin-top: -3px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-moz-range-thumb {
+  -moz-appearance:none;
+  border: 1px solid #000000;
+  height: 12px;
+  width: 8px;
+  border-radius: 3px;
+  background: #DBDBDB;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus {
+	outline:none;
+}
+
+
+#sizeRange::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	background:black;
+	height:1px;
+}
+
+#sizeRange::-moz-range-track{
+	-moz-appearance:none;
+	background:black;
+	height:1px; 
+}
+
+#size::-webkit-slider-thumb {
+  -webkit-appearance:none !important;
+  border: 1px solid #000000;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #DBDBDB;
+  cursor: pointer;
+  margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+#size::-moz-range-thumb {
+  -moz-appearance:none;
+  border: 1px solid #000000;
+  height: 12px;
+  width: 5px;
+  border-radius: 50%;
+  background: #DBDBDB;
+  cursor: pointer;
+  margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+#sizeRange::-ms-thumb {
+  height: 10px;
+  background: #fff;
+}
+
+#sizeRange::-ms-fill-lower {
+  background: #000;
+}
+
+#sizeRange:focus::-ms-fill-lower {
+  background: #000;
+}
+
+#sizeRange::-ms-fill-upper {
+  background: #000;
+}
+
+#sizeRange:focus::-ms-fill-upper {
+  background: #000;
+}
+
+  .cSlider::-moz-range-track {
+    height: 10px;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+    -moz-appearance: none;
+      border: 0 none;
+        overflow: visible;
+  }
+
+  .cSlider::-ms-track {
+    height: 10px;
+    width: 150px;
+    background: transparent; 
+    border-color: transparent;
+      border: 0 none;
+        overflow: visible;
+    color: transparent;
+    -webkit-appearance: none;
+  }
+
+    .cSlider {
+    height: 10px;
+    background: transparent; 
+      border: 0 none;
+        overflow: visible;
+    border-color: transparent;
+    color: transparent;
+    -webkit-appearance: none;
+  }
+
+
+  .cSlider:focus::-webkit-slider-runnable-track {
+    background: transparent;
+    border: transparent;
+  }
+
+  .cSLider:focus {
+    outline: none;
+  }
+
+  .cSlider::-ms-thumb {
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+  .cSlider::-moz-range-thumb {
+    background: transparent;
+    border: 0 none;
+  }
+
+  .cSlider::-webkit-slider-thumb {
+    background: transparent;
+    border: 0 none;
+    -webkit-appearance: none;
+  }
+
+  .cSlider::-ms-fill-lower {
+    background: transparent;
+    border: 0 none;
+  }
+
+  .cSlider::-ms-fill-upper {
+    background: transparent;
+    border: 0 none;
+  }
+
+  .cSlider::-ms-tooltip {
+   display: none;
+  }
+
+#red, #green, #blue {
+  position: relative;
+  z-index: 7;
+}
+
+
+  #bluefill, #redfill, #greenfill {
+    border-radius: 4px;
+    position: relative;
+    height: 10px;
+    z-index: 0;
+    width: 155px;
+  }
+
+  #bluefill {
+    left: 15px;
+    top: 6px;
+  }
+
+  #redfill {
+    top: 6px;
+    left: 15px;
+  }
+
+  #greenfill {
+    top: 6px;
+    left: 15px;
+  }
+
+  #colorChoice {
+  left: 260px;
+  bottom: 60px;
+  }
+
+@media screen\0 {
+  #sizeRange {
+    height: 5px;
+    width: 150px;
+    margin-top: -10px;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+  #red, #green, #blue {
+    padding: 0;
+    top: 1px;
+  }
+  #redfill, #greenfill, #bluefill {
+    width: 150px;
+    left: 12px;
+  }
+
+  #redfill  {
+    bottom: 6px;
+  }
+
+  #greenfill {
+    bottom: 52px;
+  }
+
+  #bluefill {
+    bottom: 100px;
+  }
+
+  #colorChoice {
+    z-index: 1;
+    bottom: 70px;
+  }
+}
+
+@media screen\9 {
+  #sizeRange {
+    height: 5px;
+    width: 150px;
+    margin-top: -10px;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  #sizeRange {
+    height: 5px;
+    background-color: #000;
+  }
+
+  #red, #green, #blue {
+    height: 7px;
+   }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  #red {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }  
+  #green { 
+    margin-bottom: 10px;
+  }
+
+   #bluefill, #redfill, #greenfill {
+    border-radius: 4px;
+    position: relative;
+    height: 10px;
+    width: 130px;
+  }
+
+  #bluefill {
+    left: 10px;
+    top: 6px;
+  }
+
+  #redfill {
+    top: 10px;
+    left: 10px;
+  }
+
+  #greenfill {
+    top: 5px;
+    left: 10px;
+  }
+
+  #colorChoice {
+    bottom: 50px;
+  }
+}
+
+
+#RRange, #BRange, #GRange {
+	display: block;
+	overflow: hidden;
+	padding: 0 4px 0 6px;
+	margin-top: -10px;
+}
+
+#colorPreview {
+	position: relative;
+  bottom: 110px;
+  left: 485px;
+	width:40px;
+	height:40px; 
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+#brushSize {
+  top: 10px;
+  left: 30px;
+}
+
+.size {
+  display: inline-block;
+}
+
+#tools {
+  width: 35px;
+  height: 500px;
+  background-color: #cd6133;
+  padding-top: 20px;
+}
+
+#toolImages  img {
+  margin-left: 5px;
+  border-radius:50%;
+  box-sizing:border-box;
+  width:25px;
+}
+
+#canvases{
+  position:absolute;
+  height: 500px;
+  width: 500px;
+  top: 115px;
+  margin-left: 35px;
+}
+
+#back-canvas{
+  position:absolute;
+  left:0;
+  background-color:white;
+}
+
+#front-canvas{
+  cursor:none;
+  position:absolute;
+  left:0;
+}
+
+#compCan{
+  position:absolute;
+  left:0;
+}
+
+#layerThumbNails {
+  margin-left: 535px;
+  position: absolute;
+  float: right;
+  height: 500px;
+  top: 115px;
+  width: 65px;
+  padding: 20px 0 0 0;
+  background-color: #cd6133;
+}
+
+.thumbNail {
+  width: 55px;
+  height: 55px;
+  margin-left: 5px;
+  margin-top: 5px;
+  z-index: 10;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.icon {
+  border-radius:50%;
+  box-sizing:border-box;
+  width:20px;
+  margin:0px 5px 0 5px;
+}
+.icon:hover, .tool-active , #tool-images  img:hover{
+  cursor:pointer;
+  border:1px solid white;
+  border-radius:50%;
+  box-sizing:border-box;
+  width:20px;
+  margin:0px 5px 0 5px;
+}
+
+#cursor{
+  position:absolute;
+  pointer-events: none;
+  z-index:100;
+}
+
+#footer {
+  position: relative;
+  width:590px;
+  height:27px;
+  bottom: 25px;
+  background-color: #cd6133;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#footButtons {
+  float: right;
+}
+
+#RUSure, #saved {
+  float:right;
+  text-align:center;
+  margin:5px;
+  color:#DBDBDB;
+  background:#4c4c4c;
+}
+
+.closeButton {
+  color:#4c4c4c;
+  background:#DBDBDB;
+  padding:5px;
+  margin:5px;
+  border-radius:5px;
+}
+.closeButton:hover {
+  color:white;
+  cursor:pointer;
+}
